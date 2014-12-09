@@ -16,6 +16,7 @@ elem = browser.find_element_by_name("jobref")
 elem.send_keys("SOME NUMBER")
 
 htmli = browser.page_source
+# u e s t i o n : 
 start = htmli.find('Question:') + 9
 end = htmli.find('*')
 end2 = htmli.find('+')
