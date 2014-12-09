@@ -1,5 +1,5 @@
 import HTMLParser
-
+from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 
 #replace with the url
@@ -35,3 +35,4 @@ print(ans)
 
 answer = browser.find_element_by_name("value")
 answer.send_keys(ans)
+answer.send_keys(Keys.RETURN)
